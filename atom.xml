@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">Me, Myself &amp; Dev</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-11-07T20:39:28&#43;09:00</updated>
+    <updated>2020-11-07T20:58:02&#43;09:00</updated>
     <id>https://jinnyjinnyjinjin.github.io/</id>
     <link rel="alternate" type="text/html" href="https://jinnyjinnyjinjin.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://jinnyjinnyjinjin.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">[자료구조]Heap(힙)</title>
             <link rel="alternate" type="text/html" href="https://jinnyjinnyjinjin.github.io/posts/2020/11/07-ds-heap/" />
             <id>https://jinnyjinnyjinjin.github.io/posts/2020/11/07-ds-heap/</id>
-            <updated>2020-11-07T19:27:40&#43;09:00</updated>
+            <updated>2020-11-07T20:55:41&#43;09:00</updated>
             <published>2020-11-07T17:47:51&#43;09:00</published>
             
             <summary type="html">이진 트리의 한 종류 (이진 힙 - binary heap) 루트(root) 노드가 언제나 최댓값 또는 최솟값을 가짐 최대…</summary>

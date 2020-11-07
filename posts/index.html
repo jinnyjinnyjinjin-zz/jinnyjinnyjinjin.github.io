@@ -18,7 +18,7 @@
 
     
     
-        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.16ed7fe5628698af56dfdcd1d00241872b22fd0efdeee202a8fa4e3738c0517b.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.c1d4fb1b25a6184c52e2317d91c81d61d438d1496d0121f6ea1955be0515207d.js"></script>
 
     
 
@@ -54,7 +54,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "datePublished": "2020-11-04T20:17:43+00:00",
-        "dateModified": "2020-11-07T19:27:40+09:00",
+        "dateModified": "2020-11-07T20:55:41+09:00",
         "url": "https://jinnyjinnyjinjin.github.io/posts/",
         "name": "Posts",
         "description": "MemE is a powerful and highly customizable GoHugo theme for personal blogs.",
@@ -367,6 +367,28 @@
 
         
 
+        
+            <script>
+    function loadComments() {
+        (function() {
+            var utterances = document.getElementById("utterances");
+            var script = document.createElement('script');
+            script.src = 'https://utteranc.es/client.js';
+            script.async = true;
+            script.crossOrigin = 'anonymous';
+            script.setAttribute('repo', 'jinnyjinnyjinjin\/blog-comments');
+            script.setAttribute('issue-term', 'pathname');
+            const isDark = getCurrentTheme() === 'dark';
+        if (isDark) {
+            script.setAttribute('theme', 'photon-dark');
+        } else {
+            script.setAttribute('theme', 'github-light');
+        }
+            
+            utterances.appendChild(script);
+        })();
+    }
+</script>
         
 
     
