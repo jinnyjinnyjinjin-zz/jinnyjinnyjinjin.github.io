@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">Me, Myself &amp; Dev</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-12-13T17:10:14&#43;09:00</updated>
+    <updated>2020-12-13T17:59:37&#43;09:00</updated>
     <id>https://jinnyjinnyjinjin.github.io/</id>
     <link rel="alternate" type="text/html" href="https://jinnyjinnyjinjin.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://jinnyjinnyjinjin.github.io/atom.xml" />
@@ -76,27 +76,31 @@ lombok 의 동작 과정을 좀 더 깊이있게 살펴봐야 겠다.&lt;/p&gt;
             <title type="text">[Network] https 동작 과정</title>
             <link rel="alternate" type="text/html" href="https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/" />
             <id>https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/</id>
-            <updated>2020-12-13T17:06:08&#43;09:00</updated>
+            <updated>2020-12-13T17:58:55&#43;09:00</updated>
             <published>2020-12-03T18:35:29&#43;09:00</published>
             
-            <summary type="html">Http 란? Hyper Text Transfer Protocol 의 약자로 인터넷 통신 규약 입니다. 접속하고자 하는 주소 앞에 http 를 붙여 줌으로써,…</summary>
+            <summary type="html">Http 란? Hyper Text Transfer Protocol 의 약자로 TCP/IP 프로토콜 중 하나입니다. 접속하고자 하는 주소 앞에 http 를 붙여 줌으로써…</summary>
             
                 <content type="html">&lt;h2 id=&#34;http-란&#34;&gt;Http 란?&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Hyper Text Transfer Protocol&lt;/code&gt; 의 약자로 인터넷 통신 규약 입니다.
+&lt;p&gt;&lt;code&gt;Hyper Text Transfer Protocol&lt;/code&gt; 의 약자로 &lt;code&gt;TCP/IP&lt;/code&gt; 프로토콜 중 하나입니다.
 접속하고자 하는 주소 앞에 &lt;code&gt;http&lt;/code&gt; 를 붙여 줌으로써, &lt;code&gt;나는 지금 http 형식으로 요청 하는거야~&lt;/code&gt; 라는 클라이언트의 요청에 서버는 &lt;code&gt;아~ 이 요청은 http 형식이구나~&lt;/code&gt; 라고 파악하고 &lt;code&gt;http&lt;/code&gt; 형식으로 해석하여 클라이언트가 요청한 정보를 전달합니다.&lt;/p&gt;
 &lt;h2 id=&#34;https-란&#34;&gt;Https 란?&lt;/h2&gt;
-&lt;p&gt;기존의 &lt;code&gt;http&lt;/code&gt; 에 보안이라는 뜻의 &lt;code&gt;Secure&lt;/code&gt;의 &lt;code&gt;s&lt;/code&gt;를 붙여 보안 기능을 제공합니다.&lt;/p&gt;
+&lt;p&gt;HTTPS 는 새로운 애플리케이션의 계층 프로토콜이 아닌 HTTP 통신을 하는 소켓 부분을 &lt;code&gt;SSL(Secure Socket Layer)&lt;/code&gt; 이나 &lt;code&gt;TLS(Transport Layer Security)&lt;/code&gt; 라는 프로토콜로 대체한는 것입니다.
+즉, SSL 또는 TLS 라는 껍질을 덮어쓴 HTTP가 HTTPS 입니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;출처: [도서] 그림으로 배우는 Http &amp;amp; Network Basic&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;https-필요성&#34;&gt;Https 필요성&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;내가 사이트에 보내는 정보들을 제 3자가 보지 못하게 합니다.&lt;/li&gt;
 &lt;li&gt;접속한 사이트가 믿을 만한 곳인지를 알려줍니다.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;https-동작-과정&#34;&gt;Https 동작 과정&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/#1.-sand-shake&#34;&gt;1. Hand shake&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/#2.-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EA%B2%80%EC%A6%9D&#34;&gt;2. 인증서 검증&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/#3.-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%94%ED%98%B8/%EB%B3%B5%ED%98%B8%ED%99%94&#34;&gt;3. 데이터 암호/복호화&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/#1-hand-shake&#34;&gt;1. Hand shake&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/#2-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EA%B2%80%EC%A6%9D&#34;&gt;2. 인증서 검증&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/#3-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%94%ED%98%B8/%EB%B3%B5%ED%98%B8%ED%99%94&#34;&gt;3. 데이터 암호/복호화&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;1-hand-shake&#34;&gt;1. Hand shake&lt;/h3&gt;
-&lt;p&gt;우리가 브라우저 주소 입력창에 &lt;code&gt;http://&lt;/code&gt; 주소를 입력하면 입력한 당사자(클라이언트)와 접속하려는 해당 주소의 서버는 서로의 신뢰 관계를 형성하기 위해 핸드 쉐이크 과정을 수행 합니다.&lt;/p&gt;
+&lt;p&gt;우리가 브라우저 주소 입력창에 &lt;code&gt;https://&lt;/code&gt; 주소를 입력하면 입력한 당사자(클라이언트)와 접속하려는 해당 주소의 서버는 서로의 신뢰 관계를 형성하기 위해 핸드 쉐이크 과정을 수행 합니다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;클라이언트가 랜덤 데이터를 생성하고 서버에 전달 합니다.&lt;/li&gt;
 &lt;/ol&gt;
@@ -114,8 +118,11 @@ lombok 의 동작 과정을 좀 더 깊이있게 살펴봐야 겠다.&lt;/p&gt;
 &lt;p&gt;서버로 부터 받은 인증서를 발급 할 수 있는 기관을 &lt;code&gt;CA(Certificate Authority)&lt;/code&gt; 라고 합니다. 이러한 &lt;code&gt;CA&lt;/code&gt; 는 여러 곳이 존재 하는데 공식적으로 인정 받은 곳만 유효한 인증서를 발급할 수 있는 권한을 가지고 있습니다.&lt;/p&gt;
 &lt;p align=&#34;center&#34;&gt;
     &lt;img src=&#34;https://jinnyjinnyjinjin.github.io/images/2020/12/CAs.png&#34; alt=&#34;cas&#34; title=&#34;CA 기관&#34; width=&#34;40%&#34;/&gt;&lt;br&gt;
-    &lt;figurecaption&gt;CA 기관 [출처: Wikipedia]&lt;/figurecaption&gt;
+    &lt;figurecaption&gt;CA 기관 목록&lt;/figurecaption&gt;
 &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[출처: Wikipedia]&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;서버로부터 전달 받은 인증서는 CA 의 개인키로 암호화되어 있습니다. 브라우저에 내장된 CA 공개키를 가지고 인증서를 복호화하여 검증합니다.&lt;/li&gt;
 &lt;/ol&gt;
