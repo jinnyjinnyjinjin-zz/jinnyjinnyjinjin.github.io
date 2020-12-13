@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">Me, Myself &amp; Dev</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-12-03T18:59:31&#43;09:00</updated>
+    <updated>2020-12-13T17:09:04&#43;09:00</updated>
     <id>https://jinnyjinnyjinjin.github.io/</id>
     <link rel="alternate" type="text/html" href="https://jinnyjinnyjinjin.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://jinnyjinnyjinjin.github.io/atom.xml" />
@@ -16,6 +16,171 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.78.0">Hugo</generator>
+        <entry>
+            <title type="text">IDE 에서는 왜 Lombok 플러그인을 설치해야 할까?</title>
+            <link rel="alternate" type="text/html" href="https://jinnyjinnyjinjin.github.io/posts/2020/12/02-why-ide-needs-to-intall-lombok-plugin/" />
+            <id>https://jinnyjinnyjinjin.github.io/posts/2020/12/02-why-ide-needs-to-intall-lombok-plugin/</id>
+            <updated>2020-12-13T17:06:16&#43;09:00</updated>
+            <published>2020-12-03T18:47:18&#43;09:00</published>
+            
+            <summary type="html">lombok 은 개발을 참 편리하게 해 주는 라이브러리 중 하나다. 어제 intelliJ 의 새로운 버전이 릴리즈돼서 바로 업데…</summary>
+            
+                <content type="html">&lt;p&gt;&lt;code&gt;lombok&lt;/code&gt; 은 개발을 참 편리하게 해 주는 라이브러리 중 하나다.&lt;br&gt;
+어제 intelliJ 의 새로운 버전이 릴리즈돼서 바로 업데이트를 했다. (난 업데이트를 해야 직성이 풀린다..)
+그랬더니 lombok 플러그인이 아직 업데이트되지 않아서인지 lombok을 적용한 코드가 에러를 마구마구 뱉어냈다.
+이 때, 궁금해졌다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;왜 lombok은 dependency 를 추가하고도 IntelliJ 에서 플러그인을 설치 해 줘야 할까?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;lombok-플러그인-설치-필요성&#34;&gt;Lombok 플러그인 설치 필요성&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lombok uses annotation processing through APT, so, when the compiler calls it, the library generates new source files based on annotations in the originals.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;lombok은 어노테이션 프로세싱을 사용하는데, 컴파일러가 호출하면 lombok 라이브러리는 오리지널 어노테이션 기반의 새로운 소스 파일을 생성한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As Lombok generates code only during compilation, the IDE highlights errors in raw source code.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;lombok 은 컴파일 중 코드만 생성하므로, IDE 는 소스 코드를 에러로 나타낸다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is a dedicated plugin which makes IntelliJ aware of the source code to be generated. After installing it, the errors go away and regular features like Find Usages, Navigate To start working.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;IntelliJ(또는 이클립스 등등)이 생성 될 소스 코드를 인식하도록하는 전용 플러그인이 있다. 이 플러그인을 설치하고나면, 에러는 사라지고 IntelliJ 의 고정 기능인 &lt;code&gt;Fine Usages&lt;/code&gt;, &lt;code&gt;Navigate To&lt;/code&gt; 와 같은 기능들을 사용할 수 있게 된다.&lt;/p&gt;
+&lt;p&gt;결국 IDE 가 소스 코드를 파악하고 IDE에서 제공하는 기능을 사용할 수 있도록 하기위한 것으로 확인된다.
+lombok 의 동작 과정을 좀 더 깊이있게 살펴봐야 겠다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;출처: &lt;a href=&#34;https://www.baeldung.com/lombok-ide&#34;&gt;https://www.baeldung.com/lombok-ide&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://jinnyjinnyjinjin.github.io/tags/lombok/" term="Lombok" label="Lombok" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">[Network] https 동작 과정</title>
+            <link rel="alternate" type="text/html" href="https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/" />
+            <id>https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/</id>
+            <updated>2020-12-13T17:06:08&#43;09:00</updated>
+            <published>2020-12-03T18:35:29&#43;09:00</published>
+            
+            <summary type="html">Http 란? Hyper Text Transfer Protocol 의 약자로 인터넷 통신 규약 입니다. 접속하고자 하는 주소 앞에 http 를 붙여 줌으로써,…</summary>
+            
+                <content type="html">&lt;h2 id=&#34;http-란&#34;&gt;Http 란?&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Hyper Text Transfer Protocol&lt;/code&gt; 의 약자로 인터넷 통신 규약 입니다.
+접속하고자 하는 주소 앞에 &lt;code&gt;http&lt;/code&gt; 를 붙여 줌으로써, &lt;code&gt;나는 지금 http 형식으로 요청 하는거야~&lt;/code&gt; 라는 클라이언트의 요청에 서버는 &lt;code&gt;아~ 이 요청은 http 형식이구나~&lt;/code&gt; 라고 파악하고 &lt;code&gt;http&lt;/code&gt; 형식으로 해석하여 클라이언트가 요청한 정보를 전달합니다.&lt;/p&gt;
+&lt;h2 id=&#34;https-란&#34;&gt;Https 란?&lt;/h2&gt;
+&lt;p&gt;기존의 &lt;code&gt;http&lt;/code&gt; 에 보안이라는 뜻의 &lt;code&gt;Secure&lt;/code&gt;의 &lt;code&gt;s&lt;/code&gt;를 붙여 보안 기능을 제공합니다.&lt;/p&gt;
+&lt;h2 id=&#34;https-필요성&#34;&gt;Https 필요성&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;내가 사이트에 보내는 정보들을 제 3자가 보지 못하게 합니다.&lt;/li&gt;
+&lt;li&gt;접속한 사이트가 믿을 만한 곳인지를 알려줍니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;https-동작-과정&#34;&gt;Https 동작 과정&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/#1.-sand-shake&#34;&gt;1. Hand shake&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/#2.-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EA%B2%80%EC%A6%9D&#34;&gt;2. 인증서 검증&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://jinnyjinnyjinjin.github.io/posts/2020/12/02-how-to-work-https/#3.-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%94%ED%98%B8/%EB%B3%B5%ED%98%B8%ED%99%94&#34;&gt;3. 데이터 암호/복호화&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-hand-shake&#34;&gt;1. Hand shake&lt;/h3&gt;
+&lt;p&gt;우리가 브라우저 주소 입력창에 &lt;code&gt;http://&lt;/code&gt; 주소를 입력하면 입력한 당사자(클라이언트)와 접속하려는 해당 주소의 서버는 서로의 신뢰 관계를 형성하기 위해 핸드 쉐이크 과정을 수행 합니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;클라이언트가 랜덤 데이터를 생성하고 서버에 전달 합니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://jinnyjinnyjinjin.github.io/images/2020/12/hand_shaking_1.png&#34; alt=&#34;hand_shaking_1&#34; /&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;클라이언트의 랜덤 데이터를 받은 서버는 서버의 랜덤 데이터를 생성하고 생성된 데이터와 인증서를 클라이언트에 전달 합니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://jinnyjinnyjinjin.github.io/images/2020/12/hand_shaking_2.png&#34; alt=&#34;hand_shaking_2&#34; /&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;여기까지가 클라이언트와 서버의 &lt;code&gt;Hand shake&lt;/code&gt; 과정입니다.&lt;/p&gt;
+&lt;h3 id=&#34;2-인증서-검증&#34;&gt;2. 인증서 검증&lt;/h3&gt;
+&lt;p&gt;서버로 부터 받은 인증서를 발급 할 수 있는 기관을 &lt;code&gt;CA(Certificate Authority)&lt;/code&gt; 라고 합니다. 이러한 &lt;code&gt;CA&lt;/code&gt; 는 여러 곳이 존재 하는데 공식적으로 인정 받은 곳만 유효한 인증서를 발급할 수 있는 권한을 가지고 있습니다.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://jinnyjinnyjinjin.github.io/images/2020/12/CAs.png&#34; alt=&#34;cas&#34; title=&#34;CA 기관&#34; width=&#34;40%&#34;/&gt;&lt;br&gt;
+    &lt;figurecaption&gt;CA 기관 [출처: Wikipedia]&lt;/figurecaption&gt;
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;서버로부터 전달 받은 인증서는 CA 의 개인키로 암호화되어 있습니다. 브라우저에 내장된 CA 공개키를 가지고 인증서를 복호화하여 검증합니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://jinnyjinnyjinjin.github.io/images/2020/12/cert_verification.png&#34; alt=&#34;cert_verification&#34; /&gt;
+    &lt;figurecaption&gt;인증서 검증&lt;/figurecaption&gt;
+&lt;/p&gt;
+&lt;p&gt;만약 CA 리스트에 해당하는 인증서가 아니라면 주소창에 &lt;code&gt;Not secure&lt;/code&gt; 라는 경고가 뜨게 됩니다.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://jinnyjinnyjinjin.github.io/images/2020/12/http_warning.png&#34; alt=&#34;http_warning&#34; width=&#34;40%&#34;/&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;3-데이터-암호복호화&#34;&gt;3. 데이터 암호/복호화&lt;/h3&gt;
+&lt;p&gt;핸드 쉐이크와 인증서의 검증 과정을 거치고 서로의 신뢰를 확인한 클라이언트와 서버가 데이터를 주고 받습니다. 이 때는 대칭키와 비대칭키를 활용하여 데이터를 암호/복호화 합니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;성공적으로 복호화된 인증서에는 서버의 공개키가 포함되어 있습니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://jinnyjinnyjinjin.github.io/images/2020/12/server_pub_key.png&#34; alt=&#34;server_pub_key&#34; /&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;클라이언트는 앞전에 생성하고 서버로부터 전달 받은 랜덤한 데이터를 가지고 임시 키를 생성 합니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://jinnyjinnyjinjin.github.io/images/2020/12/temp_key.png&#34; alt=&#34;temp_key&#34; /&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;생성한 임시 키를 서버의 공개키로 암호화하여 서버에게 전달 합니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://jinnyjinnyjinjin.github.io/images/2020/12/send_temp_key.png&#34; alt=&#34;send_temp_key&#34; /&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;서버가 암호화된 임시 키를 전달 받으면 자신이 가지고 있는 개인키로 복호화 하고 클라이언트와 서버 양측에서는 각각 일련의 과정을 거쳐 동일한 대칭키를 생성합니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://jinnyjinnyjinjin.github.io/images/2020/12/symmetric_key.png&#34; alt=&#34;symmetric_key&#34; /&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;이렇게 생성된 대칭키는 오직 클라이언트와 서버만이 가지고 있습니다. 이 대칭키를 가지고 데이터를 암호화하여 전달하고, 받은 쪽에서 같은 대칭키로 복호화하여 외부로부터 안전하게 데이터를 주고 받을 수 있습니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;출처: &lt;a href=&#34;https://www.youtube.com/watch?v=H6lpFRpyl14&#34;&gt;https://www.youtube.com/watch?v=H6lpFRpyl14&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://jinnyjinnyjinjin.github.io/tags/network/" term="Network" label="Network" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">[Hackerrank] Mark and Toys</title>
             <link rel="alternate" type="text/html" href="https://jinnyjinnyjinjin.github.io/posts/2020/11/08-hacerrank-mark-and-toys/" />
